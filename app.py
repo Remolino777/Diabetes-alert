@@ -59,9 +59,9 @@ with st.form('my_form', clear_on_submit=True):
         email = st.text_input('Email', placeholder='Input Email.....')
     
     
-    st.markdown('''
-                    :green[*Labs' results __________________________________*]
-                    ''')
+    # st.markdown('''
+    #                 :green[*Labs' results __________________________________*]
+    #                 ''')
     
     c7,c8,c9 = st.columns(3, gap='large')
     with c7:
@@ -94,9 +94,8 @@ with st.form('my_form', clear_on_submit=True):
                 ''')    
     
       
-    s_button = st.form_submit_button("Submit", disabled=False)
-    
-st.divider()
+    s_button = st.form_submit_button("Submit", disabled=False)  
+
 
 # st.markdown('''
 #                 :gray[*Please fill all the form information....*]
