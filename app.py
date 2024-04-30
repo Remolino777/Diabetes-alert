@@ -1,5 +1,5 @@
 import streamlit as st 
-from PIL import Image
+#from PIL import Image
 import joblib as jb
 
 #____________________ Page configuration
@@ -27,16 +27,16 @@ BUN = 5
 model = jb.load('blood_model.pkl')
 
 #____________________ Functions
-@st.cache_resource
-def load_img(image_file):
-    # Leer la imagen
-    image = Image.open(image_file)    
-    return image
+# @st.cache_resource
+# def load_img(image_file):
+#     # Leer la imagen
+#     image = Image.open(image_file)    
+#     return image
 
 col1, col2 , col3 = st.columns([1,1,1], gap='large')
 
 with col2:
-    st.image(load_img(image_path), use_column_width=True)
+    st.image(image_path, use_column_width=True)
     
 with st.form('my_form', clear_on_submit=True):
     b_activation = True 
