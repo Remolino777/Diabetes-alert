@@ -115,10 +115,10 @@ if s_button:
     
     if result == 1:
         st.subheader("⚠️⚠️High risk of diabetes. report to the doctor⚠️⚠️")
-        
+        st.subheader(":gray[Patient's blood test successfully recorded]  ✅")
         
     elif result == 0:
-        st.subheader("patient's blood test registered successfully  ✅")
+        st.subheader("Patient's blood test successfully recorded  ✅")
         
     
     
